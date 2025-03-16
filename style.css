@@ -102,3 +102,11 @@ button:hover {
     color: gray;
     margin-top: 10px; 
 }
+@media only screen and(max-width:393px)
+{
+    .container{
+        height: 60vh;
+        width: 60vw;
+        background-color: red;
+    }
+}
