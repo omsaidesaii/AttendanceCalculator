@@ -20,5 +20,5 @@ A simple web-based **Attendance Calculator** that helps students track their att
 3. Get your **attendance percentage** and suggestions.
 
 ## 📌 Live Demo
-[Check it out here](your-live-demo-link)
+[Check it out here](https://attendance-calculator-eight.vercel.app/)
 
