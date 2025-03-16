@@ -11,9 +11,6 @@ A simple web-based **Attendance Calculator** that helps students track their att
 ## 🛠️ Technologies Used
 - HTML, CSS, JavaScript
 
-## 📷 Preview
-![Attendance Calculator Screenshot](screenshot.png)
-
 ## 🔧 How to Use
 1. Enter **Total Classes** and **Attended Classes**.
 2. Click **Calculate**.
