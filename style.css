@@ -1,112 +1,178 @@
+/* Global Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: whitesmoke;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: whitesmoke;
+	padding: 20px; /* Prevents content from touching screen edges */
 }
 
+/* Calculator Container */
 .container {
-    max-width: 450px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    
+	max-width: 450px;
+	width: 100%;
+	background: #fff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	text-align: center;
 }
 
+/* Heading */
 h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 24px;
 }
 
+/* Input Fields */
 input {
-    width: 100%;
-    padding: 12px;
-    margin: 12px 0;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-    transition: 0.3s;
+	width: 100%;
+	padding: 12px;
+	margin: 12px 0;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	font-size: 16px;
+	background-color: #f9f9f9;
+	transition: 0.3s;
 }
 
 input:focus {
-    border-color: #007BFF;
-    outline: none;
-    background-color: #fff;
+	border-color: #007BFF;
+	outline: none;
+	background-color: #fff;
 }
 
+/* Buttons */
 button {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    background: rgb(23, 23, 23);
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-bottom: 5px; 
-    margin-top:15px ;
+	width: 100%;
+	padding: 14px;
+	border: none;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	background: rgb(23, 23, 23);
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-bottom: 5px;
+	margin-top: 15px;
 }
 
 button:hover {
-    background: #000000;
-    transform: scale(1.05);
+	background: #000000;
+	transform: scale(1.05);
 }
 
+/* Result Display */
 #result {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
-    color: #333;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #333;
 }
 
+/* Info Boxes */
 .info-box {
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px;
-    margin-top: 15px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 100%;
-    transition: 0.3s;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px;
+	margin-top: 15px;
+	border-radius: 10px;
+	display: inline-block;
+	width: 100%;
+	transition: 0.3s;
 }
 
 .success {
-    background-color: #D4EDDA;
-    color: #155724;
-    border: 1px solid #C3E6CB;
+	background-color: #D4EDDA;
+	color: #155724;
+	border: 1px solid #C3E6CB;
 }
 
 .warning {
-    background-color: #FFF3CD;
-    color: #856404;
-    border: 1px solid #FFEEBA;
+	background-color: #FFF3CD;
+	color: #856404;
+	border: 1px solid #FFEEBA;
 }
 
+/* Footer Text */
 .user {
-    font-size: 12px;
-    font-family: sans-serif;
-    color: gray;
-    margin-top: 10px; 
+	font-size: 12px;
+	font-family: sans-serif;
+	color: gray;
+	margin-top: 10px;
 }
-@media only screen and(max-width:393px)
-{
-    .container{
-        height: 60vh;
-        width: 60vw;
-        background-color: red;
-    }
+
+/* Responsive Design */
+
+/* Tablets (Max Width: 768px) */
+@media (max-width: 768px) {
+	.container {
+		max-width: 90%;
+		padding: 25px;
+	}
+
+	input {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	button {
+		font-size: 16px;
+		padding: 12px;
+	}
+}
+
+/* Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+	.container {
+		max-width: 95%;
+		padding: 20px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	input {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	button {
+		font-size: 16px;
+		padding: 12px;
+	}
+}
+
+/* Very Small Screens (Max Width: 360px) */
+@media (max-width: 360px) {
+	.container {
+		max-width: 98%;
+		padding: 15px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	input {
+		font-size: 13px;
+		padding: 8px;
+	}
+
+	button {
+		font-size: 14px;
+		padding: 10px;
+	}
 }
