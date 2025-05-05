@@ -1,11 +1,10 @@
-/* Global Reset */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-/* Body Styling */
+
 body {
 	font-family: 'Poppins', sans-serif;
 	display: flex;
@@ -13,10 +12,10 @@ body {
 	align-items: center;
 	height: 100vh;
 	background-color: whitesmoke;
-	padding: 20px; /* Prevents content from touching screen edges */
+	padding: 20px; 
 }
 
-/* Calculator Container */
+
 .container {
 	max-width: 450px;
 	width: 100%;
@@ -27,14 +26,12 @@ body {
 	text-align: center;
 }
 
-/* Heading */
 h2 {
 	color: #333;
 	margin-bottom: 20px;
 	font-size: 24px;
 }
 
-/* Input Fields */
 input {
 	width: 100%;
 	padding: 12px;
@@ -52,7 +49,6 @@ input:focus {
 	background-color: #fff;
 }
 
-/* Buttons */
 button {
 	width: 100%;
 	padding: 14px;
@@ -73,7 +69,6 @@ button:hover {
 	transform: scale(1.05);
 }
 
-/* Result Display */
 #result {
 	font-size: 22px;
 	font-weight: bold;
@@ -81,7 +76,6 @@ button:hover {
 	color: #333;
 }
 
-/* Info Boxes */
 .info-box {
 	font-size: 16px;
 	font-weight: bold;
@@ -105,7 +99,7 @@ button:hover {
 	border: 1px solid #FFEEBA;
 }
 
-/* Footer Text */
+
 .user {
 	font-size: 12px;
 	font-family: sans-serif;
@@ -113,9 +107,7 @@ button:hover {
 	margin-top: 10px;
 }
 
-/* Responsive Design */
 
-/* Tablets (Max Width: 768px) */
 @media (max-width: 768px) {
 	.container {
 		max-width: 90%;
@@ -133,7 +125,7 @@ button:hover {
 	}
 }
 
-/* Mobile Devices (Max Width: 480px) */
+
 @media (max-width: 480px) {
 	.container {
 		max-width: 95%;
@@ -155,7 +147,7 @@ button:hover {
 	}
 }
 
-/* Very Small Screens (Max Width: 360px) */
+
 @media (max-width: 360px) {
 	.container {
 		max-width: 98%;
